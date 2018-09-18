@@ -1,0 +1,24 @@
+<div class="level2">
+  <h3>Who doesn't like products?</h3>
+  <p>Look at all of these products!</p>
+  <button [routerLink] = "['/reviews']">Go to Reviews</button>
+  <table>
+    <tr>
+      <th>Product Uno</th>
+      <th>Product Dos</th>
+      <th>Product Tres</th>
+    </tr>
+    <tr>
+      <td>
+        <button [routerLink] = "['details', 1]">Details</button>
+      </td>
+      <td>        
+        <button [routerLink] = "['details', 2]">Details</button>
+      </td>
+      <td>        
+        <button [routerLink] = "['details', 3]">Details</button>
+      </td>
+    </tr>
+  </table>
+  <router-outlet></router-outlet>
+</div>
